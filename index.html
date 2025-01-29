@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Dashboard Layout using HTML5 and Tailwind CSS">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="bg-gray-800 text-white w-64 p-5 space-y-6">
+            <!-- Logo and Title -->
+            <div class="text-center text-xl font-bold">
+                <h2>My Dashboard</h2>
+            </div>
+
+            <!-- Sidebar Navigation Links -->
+            <div class="space-y-2">
+                <a href="#dashboard" class="text-white block py-2 px-4 rounded hover:bg-gray-600">Dashboard</a>
+                <a href="#profile" class="text-white block py-2 px-4 rounded hover:bg-gray-600">Profile</a>
+                <a href="#settings" class="text-white block py-2 px-4 rounded hover:bg-gray-600">Settings</a>
+                <a href="#statistics" class="text-white block py-2 px-4 rounded hover:bg-gray-600">Statistics</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6 bg-gray-100 overflow-auto">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="space-y-6">
+                <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white shadow-md rounded-lg p-5">
+                        <h2 class="text-xl font-semibold text-gray-700">Total Users</h2>
+                        <p class="text-3xl font-bold text-blue-500">1,250</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white shadow-md rounded-lg p-5">
+                        <h2 class="text-xl font-semibold text-gray-700">New Orders</h2>
+                        <p class="text-3xl font-bold text-green-500">350</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white shadow-md rounded-lg p-5">
+                        <h2 class="text-xl font-semibold text-gray-700">Revenue</h2>
+                        <p class="text-3xl font-bold text-purple-500">$5,890</p>
+                    </div>
+                </div>
+
+                <!-- Chart Section -->
+                <div class="bg-white shadow-md rounded-lg p-6 mt-6">
+                    <h2 class="text-xl font-semibold text-gray-700">Sales Overview</h2>
+                    <!-- Dummy chart, can be replaced with a real one -->
+                    <div class="bg-gray-300 h-48 mt-4 rounded-lg"></div>
+                </div>
+
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile" class="space-y-6 mt-10">
+                <h1 class="text-3xl font-bold text-gray-800">Profile</h1>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold text-gray-700">User Information</h2>
+                    <div class="space-y-4 mt-4">
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Email:</strong> john.doe@example.com</p>
+                        <p><strong>Role:</strong> Admin</p>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Edit Profile</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="space-y-6 mt-10">
+                <h1 class="text-3xl font-bold text-gray-800">Settings</h1>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold text-gray-700">Account Settings</h2>
+                    <div class="space-y-4 mt-4">
+                        <p><strong>Change Password:</strong></p>
+                        <input type="password" placeholder="New Password" class="w-full p-3 border border-gray-300 rounded-lg">
+                        <p><strong>Email Notifications:</strong></p>
+                        <input type="checkbox" id="notifications" class="mr-2"> Enable Notifications
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Save Changes</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section id="statistics" class="space-y-6 mt-10">
+                <h1 class="text-3xl font-bold text-gray-800">Statistics</h1>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold text-gray-700">Site Traffic</h2>
+                    <!-- Dummy chart, can be replaced with a real one -->
+                    <div class="bg-gray-300 h-48 mt-4 rounded-lg"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center mt-10">
+        <p>© 2024 My Dashboard. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
